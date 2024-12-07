@@ -1,0 +1,21 @@
+Appium(Android and IOS) Framework Development from Scratch:
+
+- Understand the importance of Framework development.
+- Build Page object Factory design pattern to drive the Element locators to the Tests
+- Implement Android and IOS Page object repositories for the respective platform tests
+- Build Actions utility classes for both Android and IOS Apps to store reusable Mobile Gestures
+- Build Generic Utility called AppiumUtils class which have commonly used methods for Android and IOS
+- Implement Base Test with Capabilities where all Tests inherit it into their respective classes
+- Methods to dynamically Start and Stop Appium Server before every Test 
+- Build Test Strategy on how tests should be written in isolation with setup and teardown methods
+- Create properties file to implement Global configuration values into the Framework
+- Build TestNG.xml files to run all tests together with proper class,suite, Test conventions inside the xml file
+- Introduce Extent reports to get excellent HTML reports of Framework results
+- Implement TestNG listeners to capture screenshots on test failures and report it back to Extent reports
+- Data driven testing from json payloads into Test using Jackson Mapper and TestNG Data provider
+- Implement TestNG groups to run selected tests based on tags set on Test level
+- Implement set of Maven Profiles using TestNG.xml runner files to run tests with Maven commands
+- Implement Run time variable inputs through Maven and adjust the code 
+
+
+ 

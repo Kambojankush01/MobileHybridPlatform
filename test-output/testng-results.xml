@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-28T13:20:47 EST" name="Default suite" finished-at="2024-11-28T13:20:47 EST" duration-ms="473">
+    <groups>
+      <group name="Smoke">
+        <method signature="eCommerce_tc_4_Hybrid.DealingWithHybridApp(java.util.HashMap)[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" name="DealingWithHybridApp" class="Android.test.eCommerce_tc_4_Hybrid"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2024-11-28T13:20:47 EST" name="Default test" finished-at="2024-11-28T13:20:47 EST" duration-ms="473">
+      <class name="Android.test.eCommerce_tc_4_Hybrid">
+        <test-method is-config="true" signature="ConfigureAppium()[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:36 EST" name="ConfigureAppium" finished-at="2024-11-28T13:20:47 EST" duration-ms="10658" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ConfigureAppium -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:47 EST" name="preSetup" finished-at="2024-11-28T13:20:47 EST" duration-ms="112" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7984, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7984, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+at common.TestUtils.AndroidBaseTest.preSetup(AndroidBaseTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="DealingWithHybridApp(java.util.HashMap)[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:47 EST" name="DealingWithHybridApp" data-provider="getData" finished-at="2024-11-28T13:20:47 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=BP12345677_#, country=Argentina, gender=female}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7984, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7984, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+at common.TestUtils.AndroidBaseTest.preSetup(AndroidBaseTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DealingWithHybridApp -->
+        <test-method is-config="true" signature="preSetup()[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:47 EST" name="preSetup" finished-at="2024-11-28T13:20:47 EST" duration-ms="100" status="FAIL">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7989, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7989, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+at common.TestUtils.AndroidBaseTest.preSetup(AndroidBaseTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- preSetup -->
+        <test-method signature="DealingWithHybridApp(java.util.HashMap)[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:47 EST" name="DealingWithHybridApp" data-provider="getData" finished-at="2024-11-28T13:20:47 EST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{name=BP123, country=Argentina, gender=male}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7989, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: An unknown server-side error occurred while processing the command. Original error: Error executing adbExec. Original error: 'Command 'C:\\Users\\AnkushKamboj\\AppData\\Local\\Android\\Sdk\\platform-tools\\adb.exe -P 5037 -s emulator-5554 shell am start-activity com.androidsample.generalstore/com.androidsample.generalstore.MainActivity' exited with code 255'; Command output: 
+Exception occurred while executing 'start-activity':
+java.lang.SecurityException: Permission Denial: starting Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10000000 cmp=com.androidsample.generalstore/.MainActivity } from null (pid=7989, uid=2000) not exported from uid 10214
+at com.android.server.wm.ActivityTaskSupervisor.checkStartAnyActivityPermission(ActivityTaskSupervisor.java:1170)
+at com.android.server.wm.ActivityStarter.executeRequest(ActivityStarter.java:1118)
+at com.android.server.wm.ActivityStarter.execute(ActivityStarter.java:782)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1312)
+at com.android.server.wm.ActivityTaskManagerService.startActivityAsUser(ActivityTaskManagerService.java:1257)
+at com.android.server.am.ActivityManagerService.startActivityAsUserWithFeature(ActivityManagerService.java:3339)
+at com.android.server.am.ActivityManagerShellCommand.runStartActivity(ActivityManagerShellCommand.java:800)
+at com.android.server.am.ActivityManagerShellCommand.onCommand(ActivityManagerShellCommand.java:246)
+at com.android.modules.utils.BasicShellCommandHandler.exec(BasicShellCommandHandler.java:97)
+at android.os.ShellCommand.exec(ShellCommand.java:38)
+at com.android.server.am.ActivityManagerService.onShellCommand(ActivityManagerService.java:10471)
+at android.os.Binder.shellCommand(Binder.java:1230)
+at android.os.Binder.onTransact(Binder.java:1043)
+at android.app.IActivityManager$Stub.onTransact(IActivityManager.java:5675)
+at com.android.server.am.ActivityManagerService.onTransact(ActivityManagerService.java:2812)
+at android.os.Binder.execTransactInternal(Binder.java:1505)
+at android.os.Binder.execTransact(Binder.java:1444)
+
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.19'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [74b5b2f5-0a13-43e7-a458-8c43e287ad42, executeScript {args=[{intent=com.androidsample.generalstore/com.androidsample.generalstore.MainActivity}], script=mobile: startActivity}]
+Capabilities {appium:app: ./src\test\resources\Genera..., appium:appPackage: com.androidsample.generalstore, appium:automationName: UIAutomator2, appium:chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., appium:databaseEnabled: false, appium:desired: {app: ./src\test\resources\Genera..., automationName: UIAutomator2, chromedriverExecutable: C:\Users\AnkushKamboj\eclip..., deviceName: Pixel API 35, platformName: ANDROID}, appium:deviceApiLevel: 35, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_x86_64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 420, appium:deviceScreenSize: 1080x1920, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 2.625, appium:platformVersion: 15, appium:statBarHeight: 63, appium:takesScreenshot: true, appium:viewportRect: {height: 1857, left: 0, top: 63, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 74b5b2f5-0a13-43e7-a458-8c43e287ad42
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:237)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebDriver.executeScript(RemoteWebDriver.java:476)
+at common.TestUtils.AndroidBaseTest.preSetup(AndroidBaseTest.java:72)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:823)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:590)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DealingWithHybridApp -->
+        <test-method is-config="true" signature="TearDown()[pri:0, instance:Android.test.eCommerce_tc_4_Hybrid@312aa7c]" started-at="2024-11-28T13:20:47 EST" name="TearDown" finished-at="2024-11-28T13:20:48 EST" duration-ms="563" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TearDown -->
+      </class> <!-- Android.test.eCommerce_tc_4_Hybrid -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
